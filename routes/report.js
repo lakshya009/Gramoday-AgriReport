@@ -19,6 +19,14 @@ router.post("/", async function (req, res) {
   }
 });
 
+router.get("/", async function (req, res) {
+  try {
+    const allReports = await Report.find();
+
+    res.status(200).json(allReports);
+  } catch (err) {}
+});
+
 //Get report
 router.get("/", async function (req, res) {
   try {
