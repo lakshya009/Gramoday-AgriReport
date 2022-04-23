@@ -1,6 +1,6 @@
 Gramoday-AgriReport
 
-Heroku server: https://gramoday.herokuapp.com/
+Heroku server: https://gramoday.herokuapp.com/. 
 You can use this address directly in the Postman to send requests.
 
 ```
