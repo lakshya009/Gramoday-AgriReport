@@ -19,16 +19,19 @@ router.post("/", async function (req, res) {
   }
 });
 
+//Get all the reports
 router.get("/", async function (req, res) {
   try {
     const allReports = await Report.find();
 
     res.status(200).json(allReports);
-  } catch (err) {}
+  } catch (err) {
+    req.status(500).json(err);
+  }
 });
 
-//Get report
-router.get("/", async function (req, res) {
+//Get a particular aggregated report
+router.get("/report", async function (req, res) {
   try {
     const query = req.query.report_id;
 
