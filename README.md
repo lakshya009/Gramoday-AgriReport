@@ -1,5 +1,12 @@
 Gramoday-AgriReport
 
+Heroku server: https://gramoday.herokuapp.com/
+You can use this address directly in the Postman to send requests.
+
+POST/api/reports/: to add a new report
+GET/api/reports/: to get all the reports
+GET/api/reports/report?report_id=6263154354d536d501e18b88: to get a particular report.
+
 In this project daily prices are reported by users whose occupation is mandi
 commission agent. Each mandi commission agent maps to one market commodity combination
 for which he creates a daily price report.
@@ -8,7 +15,7 @@ For a particular commodity item, different users can add different reports and f
 
 Example:
 
-POST\api\repots:
+POST/api/reports:
 
 ```{
     "reportDetails": [
@@ -50,7 +57,6 @@ Another POST
 }
 
 Response:
-Response:
 {
   reportStatus: "success";,
   report_id: 6263154354d536d501e18b88;
@@ -58,7 +64,7 @@ Response:
 
 
 #GET request
-  GET\api\reports?report_id=6263154354d536d501e18b88
+  GET/api/reports?report_id=6263154354d536d501e18b88
 
   Response:
   {
