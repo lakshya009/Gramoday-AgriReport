@@ -31,13 +31,6 @@ router.get("/", async function (req, res) {
     if (commodities) {
       let commodityInstance = commodities[0].reportDetails[0];
 
-      // const sample = {
-      //   cmdtyID: commodityInstance.cmdtyID,
-      //   marketID: commodityInstance.marketID,
-      // };
-      // const test = await Report.findOne(sample);
-      // console.log(test);
-
       let totalPrice = 0;
       let convertedPrice;
       let flag = 0;
