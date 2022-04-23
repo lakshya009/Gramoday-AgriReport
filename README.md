@@ -18,7 +18,7 @@ Example:
 
 POST/api/reports:
 
-```{
+{
     "reportDetails": [
         {
         "userID": "user-1",
