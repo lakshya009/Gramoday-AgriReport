@@ -3,7 +3,7 @@ Gramoday-AgriReport
 Heroku server: https://gramoday.herokuapp.com/
 You can use this address directly in the Postman to send requests.
 
-POST/api/reports/: to add a new report
+```POST/api/reports/: to add a new report
 GET/api/reports/: to get all the reports
 GET/api/reports/report?report_id=6263154354d536d501e18b88: to get a particular report.
 
